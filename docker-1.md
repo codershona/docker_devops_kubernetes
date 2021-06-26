@@ -1,4 +1,4 @@
-## Creating and Using Containers 
+## Creating and Using Docker Containers 
 
 ### Getting Started
 
