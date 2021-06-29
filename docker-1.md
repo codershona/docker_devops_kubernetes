@@ -151,6 +151,11 @@ docker top mongo
 ```
 
 ## Check the current process in Containers: CLI Process Monitoring :
+ 
+ * docker container top is used to process list in one conatiner.
+ * docker container inspect isused to see the details of the one container config.
+ * docker container stats is used to check the performance of the stats for all containers.
+
 ```
 docker container run -d --name nginx nginx
 
@@ -173,6 +178,14 @@ docker container ls
 
 
 ## Shell Inside Containers: No Need for SSH
+
+ * docker container run -it is used to start new container interactively.
+ * docker container exec -it used to run additional command in exisiting container. 
+ * No SSH needed because Docker Cli is a great substitute for adding SSh to Containers.
+ * docker container exec used to run additional process in running container.
+ * Alphine Linux is a small security focused distribution.
+ * Using diffrent Linux distros such as, ubuntu and alpine in container.
+
 ```
 docker container run -help
 
@@ -208,6 +221,12 @@ docker container run -it alpine sh
 ```
 
 ## Docker Networks: Concepts for Private and Public Comms in Containers :
+
+* Review of docker container run -p which runs that exposes the port in our local machine.
+* To quick check the port - docker container port <container>.
+* Each container connected to a private virtual network "bridge".
+* For local dev/testing , networks usually "just work".
+
 ```
 docker container run -p 80:80 --name webhost -d nginx
 
@@ -217,6 +236,14 @@ docker container inspect --format '{{ .NetworkSettings.IPAddress }}' webhost
 ```
 
 ## Docker Networks: CLI Management of Virtual Networks
+
+* docker network ls command is actually used to show the networks.
+* docker network inspect is used for to inspect a network.
+* docker network create --driver is used to create a network. 
+* docker network connect is used to attach a network to container.
+* docker network disconnect is used to detach a network from container.
+
+
 ```
 docker network ls
 
@@ -246,6 +273,11 @@ docker container inspect
 ```
 
 ## Docker Networks: DNS and How Containers Find Each Other :
+
+* --link is used to enable DNS on default bridge network.
+* Working process of defualt with custom networks.
+* Containers will not rely on IP's for inter-communication.
+
 ```
 docker container ls
 
@@ -263,7 +295,10 @@ docker network ls
 
 docker container create --help
 ```
-## Using Containers for CLI Testing :
+## CLI-App TESTING:
+### Using Containers for CLI Testing :
+* docker container --rm is used where we can save the cleanup.
+
 ```
 docker container run --rm -it centos:7 bash
 
@@ -273,7 +308,9 @@ docker container run --rm -it ubuntu:14.04 bash
 
 docker ps -a
 ```
-## DNS Round Robin Testing :
+## DNS RR TEST : 
+### DNS Round Robin Testing :
+
 ```
 docker network create dude
 
@@ -281,7 +318,7 @@ docker container run -d --net dude --net-alias search elasticsearch:2
 
 docker container ls
 
-docker container run --rm -- net dude alpine nslookup search
+docker container run --rm --net dude alpine nslookup search
 
 docker container run --rm --net dude centos curl -s search:9200
 
