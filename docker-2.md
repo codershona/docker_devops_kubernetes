@@ -145,7 +145,7 @@ docker image build -t customnginx .
 
 docker image ls
 
-vim Dockerfi le
+vim Dockerfile
 Or,
 nano Dockerfile
 
@@ -156,27 +156,61 @@ docker image build -t customnginx .
 ```
 cd dockerfile-sample-2
 
+Run: ll (LL small letter)
+
 vim Dockerfile
 
 docker container run -p 80:80 --rm nginx
+Or,
+docker container run -p 8080:80 --rm nginx
 
 docker image build -t nginx-with-html .
 
 docker container run -p 80:80 --rm nginx-with-html
+Or,
+docker container run -p 8080:80 --rm nginx-with-html
+
+If you run 8080:80 prt then go to http://localhost:8080/ because only localhost will not work and we will not see our inde html file updates.
 
 docker image ls
 
 docker image tag --help
 
-docker image tag nginx-with-html:latest bretfisher/nginx-with-html:latest
+docker image tag nginx-with-html:latest codersh/nginx-with-html:latest
 
 docker image ls
 
 docker push
 ```
+
+
+* Which of the following is an example of a container image that you can run?
+
+  Answer: nginx
+
+* Which flag would you pass to specify a docker build referencing a file other than the default 'Dockerfile'?
+
+ANSWER: -f
+
+ * Which Dockerfile stanza (Command) is best to use for changing the directory in a Dockerfile?
+
+ ANSWER: WORKDIR
+
+
 ## Build Your Own Dockerfile and Run Containers :
 
  * Building our own image is quite fun part of the container images.
+ * Docker file are part process workflow and part art.
+ * Take exisiting Node.js app and dockerize it.
+ * Make Dockerfile, build it, test it, push it, (rm it), Run it.
+ * Expect this to be iterative, rarely do I get it right the first time. 
+ * Details in dockerfile-assignment-1.Dockerfile.
+ * Use the Alphine version of the official 'node' 6.x image.
+ * Expected result is web site at http://localhost or, http://localhost:8080
+ * Tag and Push to your docker hub account.
+ * Remove the image from local cache, run again from hub.
+
+
 ```
 cd dockerfile-assignment-1
 
