@@ -1,6 +1,15 @@
 # Docker Container Images:
 ### How can we find them and how to build it?
 
+ * This is all about the images by building blocks of the container.
+ * Think about how to find good images and in the whole process and how to manage those images.
+ * TRy to manage the local image Cache when we download those images and created them on our own machines.
+ * It is an app binaries and binaries which is for our app that we are working on and we need to know the way it run in th metadata.
+ * Defintion: An image is an ordered collection of the root of filesystems changes and the corresponding execution parameters for uses including a container runtimes. 
+ * Inside this image there is actually no complete OS, It does not have kernel and kernel modules such as, drives.
+ * Smalll as one file in our built app as binary such as, golang static binary.
+ * It is big as a Ubuntu distro with apt, and Apache, PHP as well as more installation. 
+
 Also we can read this link:
 ```
 https://github.com/moby/moby/blob/master/image/spec/v1.md
@@ -13,6 +22,15 @@ https://docs.docker.com/engine/reference/builder/
 ```
 
 ## Using Docker Hub Registry Images :
+* The fundamentals of Docker Hub
+* We can search in docker official or in other good public images.
+* We can download images and basics of the image tags.
+* We can use Alphine image or other iages options.
+* Sign up or i  in docker hub: https://tinyurl.com/f9fnyamd
+* Docker Hub has its apt package system for containers.
+* Docker official images as well as uses of them.
+* HOw to discern good public images.
+* Uses of different base images such as, debian or alphine. 
 ```
 http://hub.docker.com
 
@@ -29,6 +47,9 @@ docker pull nginx:1.11.9-alpine
 docker image ls
 ```
 ### Images and Their Layers: Discover the Image Cache
+
+  * Here, we can check images and its layers.
+
 ```
 docker image ls
 
@@ -114,6 +135,8 @@ docker image ls
 docker push
 ```
 ## Build Your Own Dockerfile and Run Containers :
+
+ * Building our own image is quite fun part of the container images.
 ```
 cd dockerfile-assignment-1
 
