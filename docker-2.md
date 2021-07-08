@@ -130,17 +130,29 @@ docker image ls
 cd dockerfile-sample-1
 
 vim Dockerfile
+Or,
+nano Dockerfile
 ```
 
 ## Building Images: Running Docker Builds
+
+* Check the docker sample 1 file.
+
 ```
+Run: ll (LL small letter)
+
 docker image build -t customnginx .
 
 docker image ls
 
+vim Dockerfi le
+Or,
+nano Dockerfile
+
 docker image build -t customnginx .
 ```
 ## Building Images: Extending Official Images
+* Check the docker sample 2 file.
 ```
 cd dockerfile-sample-2
 
