@@ -124,6 +124,8 @@ docker image push codersh/nginx:testing
 docker image ls
 ```
 ## Building Images Using The Dockerfile Basics :
+
+
 ```
 cd dockerfile-sample-1
 
