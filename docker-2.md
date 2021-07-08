@@ -226,17 +226,17 @@ docker images
 
 docker tag --help
 
-docker tag testnode bretfisher/testing-node
+docker tag testnode codersh/testing-node
 
 docker push --help
 
-docker push bretfisher/testing-node
+docker push codersh/testing-node
 
 docker image ls
 
-docker image rm bretfisher/testing-node
+docker image rm codersh/testing-node
 
-docker container run --rm -p 80:3000 bretfisher/testing-node
+docker container run --rm -p 80:3000 codersh/testing-node
 ```
 
 
