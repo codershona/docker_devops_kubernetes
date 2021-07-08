@@ -49,17 +49,39 @@ docker image ls
 ### Images and Their Layers: Discover the Image Cache
 
   * Here, we can check images and its layers.
-
+  * Image Layers
+  * Union filesystems
+  * History and inspects Commands
+  * Copy on write
+  * Image Container Layers ---> Apache ----> Container 2 ---> COW 
+  * docker inspect commads actually use for the return of te JSON metadata about the image.
+  * File systems changes and metadata were made by the images.
+  * Each container layers were uncommon and unique to identify as well as we can stored them in once in a host. 
+  * This could save the storage spaces on host or transfer time on pull or push.
+  * A container were just for the single read or write layers on the top of the images.
 ```
 docker image ls
 
-docker history nginx:latest
+docker history nginx:latest (old way)
 
 docker history mysql
 
 docker image inspect nginx
 ```
 ## Image Tagging and Pushing to Docker Hub :
+
+ * Here , we need to unsderstand how are the container images works and fundamentals of the image layers.
+ * Know all about the image tags.
+ * How to upload docker hub.
+ * Image ID vs. Tag.
+ * Properly tagging images
+ * Tagging Images for upload to Docker Hub
+ * Tagging Images for upload to Docker Hub
+ * How tagging is related to image ID
+ * The latest tag.
+ * Logging into docker hub from docker cli.
+ * How to create a private docker hub images.
+
 ```
 docker image tag -- help
 
@@ -73,13 +95,13 @@ docker pull nginx:mainline
 
 docker image ls
 
-docker image tag nginx bretfisher/nginx
+docker image tag nginx codersh/nginx
 
 docker image tag --help
 
 docker image ls
 
-docker image push bretfisher/nginx
+docker image push codersh/nginx
 
 docker --help
 
@@ -87,13 +109,17 @@ docker login
 
 cat .docker/config.json
 
-docker image push bretfisher/nginx
+docker image push codersh/nginx
 
-docker image push bretfisher/nginx bretfisher/nginx:testing
+docker image tag codersh/nginx bretfisher/nginx:testing
+
+docker image push codersh/nginx:testing
+
+docker image push codersh/nginx codersh/nginx:testing
 
 docker image ls
 
-docker image push bretfisher/nginx:testing
+docker image push codersh/nginx:testing
 
 docker image ls
 ```
