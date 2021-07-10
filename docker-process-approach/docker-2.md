@@ -3,7 +3,7 @@
 
  * This is all about the images by building blocks of the container.
  * Think about how to find good images and in the whole process and how to manage those images.
- * TRy to manage the local image Cache when we download those images and created them on our own machines.
+ * Try to manage the local image Cache when we download those images and created them on our own machines.
  * It is an app binaries and binaries which is for our app that we are working on and we need to know the way it run in th metadata.
  * Defintion: An image is an ordered collection of the root of filesystems changes and the corresponding execution parameters for uses including a container runtimes. 
  * Inside this image there is actually no complete OS, It does not have kernel and kernel modules such as, drives.
@@ -214,6 +214,8 @@ ANSWER: -f
 ```
 cd dockerfile-assignment-1
 
+ll
+
 vim Dockerfile
 
 docker build cmd
@@ -221,6 +223,11 @@ docker build cmd
 docker build -t testnode .
 
 docker container run --rm -p 80:3000 testnode
+
+OR,
+docker container run --rm -p 8080:3000 testnode
+
+Then I went to browser http://localhost:8080/
 
 docker images
 
@@ -237,6 +244,10 @@ docker image ls
 docker image rm codersh/testing-node
 
 docker container run --rm -p 80:3000 codersh/testing-node
+OR,
+docker container run --rm -p 8080:3000 codersh/testing-node
+
+Then I went to browser http://localhost:8080/
 ```
 
 ### Using Prune to Keep Your Docker System Clean:
