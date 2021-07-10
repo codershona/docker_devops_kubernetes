@@ -14,6 +14,21 @@
 ### Docker Creating and Using Container
  
 ### Docker Container Images
+
+ * What's In An Image (and What Isn't)
+ * The Mighty Hub: Using Docker Hub Registry
+Images
+ * Images and Their Layers: Discover the Image
+Cache
+ * Image Tagging and Pushing to Docker Hub
+ * Building Images: The Dockerfile Basics
+ * Building Images: Running Docker Builds
+ * Building Images: Extending Official Images
+ * Assignment: Build Your Own Dockerfile and
+Run Containers From It
+ * Using Prune to Keep Your Docker System Clean
+
+
 ### Container Lifetime & Persistent Data: Volumes, Volumes, Volumes
 ###  Docker Compose: The Multi-Container Tool
 ### Swarm Intro and Creating a 3-Node Swarm Cluster
