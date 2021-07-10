@@ -12,6 +12,31 @@
 <br/>
 
 ### Docker Creating and Using Container
+
+* Check Our Docker Install and Config
+* Starting a Nginx Web Server
+*  Debrief: What Happens When We Run a
+Container
+*  Container VS. VM: It's Just a Process
+*  Windows Containers: Docker Is No Longer Just
+Linux
+* Assignment: Manage Multiple Containers
+Containers
+* What's Going On In Containers: CLI Process
+Monitoring
+* Getting a Shell Inside Containers: No Need for
+SSH
+* Docker Networks: Concepts for Private and
+Public Comms in Containers
+* FIXME: Change In Official Nginx Image
+Removes Ping
+* Docker Networks: CLI Management of Virtual
+Networks
+*  Docker Networks: DNS and How Containers
+Find Each Other
+* Assignment: Using Containers for CLI Testing
+* FIXME: Bug in alpine affects nslookup
+* Assignment: DNS Round Robin Test
  
 ### Docker Container Images
 
