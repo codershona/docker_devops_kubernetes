@@ -2,7 +2,7 @@
 
 <p align="center">
 	
-<img src="https://user-images.githubusercontent.com/57604500/125166578-8f48e900-e19c-11eb-84f3-6dc7bed3e2ac.png" width=656>
+<img src="https://user-images.githubusercontent.com/57604500/125166578-8f48e900-e19c-11eb-84f3-6dc7bed3e2ac.png" width=456>
 <br />
 <h3 align="center">👨🏻‍💻 DOCKER HANDBOOK PROCESS</h3>
 </p>
