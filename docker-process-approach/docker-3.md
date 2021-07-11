@@ -3,7 +3,8 @@
 ## Persistent Data: Data Volumes
 
 * Important Resources to learn: ```bit.ly/3hy1YXy``` or, 
-```https://bit.ly/3xE53e8``` or, ```https://bit.ly/3k5u8KW``` or, ```https://dockr.ly/3AQcFw4``` 
+```https://bit.ly/3xE53e8``` Or, ```https://bit.ly/3k5u8KW``` Or, ```https://dockr.ly/3AQcFw4``` Or, 
+```https://jekyllrb.com/```
 * Defining the problem of persistent data.
 * Key concepts with containers : immutable, ephemeral
 * Learning and isng data volumns and bind Mounts.
