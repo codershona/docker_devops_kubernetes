@@ -101,4 +101,19 @@ POSTGRES_HOST_AUTH_METHOD=trust
 
 Note this change was in the Docker Hub image, and not a change in postgres itself.
 ```
+### Shell Differences for Path Expansion 
+```
+With Docker CLI, you can always use a full file path on any OS, but often you'll see me and others use a "parameter expansion" like $(pwd) which means "print working directory".
 
+Here's the important part. Each shell may do this differently, so here's a cheat sheet for which OS and Shell your using. I'll be using $(pwd) on a Mac, but yours may be different!
+
+This isn't a Docker thing, it's a Shell thing.
+
+For PowerShell use: ${pwd} 
+
+For cmd.exe "Command Prompt use: %cd%
+
+Linux/macOS bash, sh, zsh, and Windows Docker Toolbox Quickstart Terminal use: $(pwd) 
+
+Note, if you have spaces in your path, you'll usually need to quote the whole path in the docker command.
+```
