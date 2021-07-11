@@ -55,6 +55,16 @@ Run Containers From It
 
 
 ### Container Lifetime & Persistent Data: Volumes, Volumes, Volumes
+* Container Lifetime & Persistent Data
+* Persistent Data: Data Volumes
+* Shell Differences for Path Expansion
+* Persistent Data: Bind Mounting
+* Assignment: Database Upgrades with Named
+Volumes
+*  Assignment: Edit Code Running In Containers
+With Bind Mounts
+* Database Passwords in Containers
+
 ###  Docker Compose: The Multi-Container Tool
 ### Swarm Intro and Creating a 3-Node Swarm Cluster
 ### Swarm Basic Features and How to Use Them In Your Workflow
