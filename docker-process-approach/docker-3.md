@@ -23,6 +23,8 @@ This command stand for "print working directory", and shortens your keystrokes, 
 * When making a new volume for a mysql container, where could you look to see where the data path should be located in the container?
 ANSWER: Docker Hub
 
+* VOLUME commans in Dockerfile.
+
 ```
 docker pull mysql
 
@@ -38,7 +40,7 @@ docker volume ls
 
 docker volume inspect TAB COMPLETION
 
-docker container run -d --name2 mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysql
+docker container run -d --name mysql2 -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysql
 
 docker volume ls
 
@@ -69,11 +71,22 @@ docker container run -d --name mysql3 -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysq
 docker volume ls
 
 docker container inspect mysql3
+or,
+docker volume inspect mysql-db
 
 docker volume create --help
+To remove:
+docker container rm -f mysql
+
 ```
 
 ## Persistent Data: Bind Mounting
+* Maps a host file or directory to a container file or directory.
+* Basically just two locations pointing to the same files
+* Again skipping UFS and host files overwrite any containers 
+* Cannot use in dockerfile, must be a ```container run```. 
+* ...run -v /Users/codersh.stuff:/path/container
+
 ```
 cd dockerfile-sample-2
 
