@@ -4,7 +4,23 @@
 
 * Important Resources to learn: ```bit.ly/3hy1YXy``` or, 
 ```https://bit.ly/3xE53e8``` or, ```https://bit.ly/3k5u8KW``` or, ```https://dockr.ly/3AQcFw4``` 
-
+* Defining the problem of persistent data.
+* Key concepts with containers : immutable, ephemeral
+* Learning and isng data volumns and bind Mounts.
+* Containers are usually immutable and ephemeral.
+* "immutable infrastructure": only re-deploy containers that never change.
+* Defintion of persistent data.
+* Features of seperation docker concerns.
+* Two ways: Volumes and bind mounts.
+* Volumes: makes special location outside of container UFS.
+* Bind Mounts: links to container path to host path.
+* Which type of persistent data allows you to attach an existing directory on your host to a directory inside of a container?
+ANSWER: Bind Mount
+* When adding a bind mount to a docker run command, you can use the shortcut $(pwd), (or ${pwd} depending on your shell). What does that do?
+ANSWER: It runs the shell command to print the current working directory, to avoid having to type out the entirety of your directory location.
+This command stand for "print working directory", and shortens your keystrokes, and reduces errors from mistyping your path or forgetting to escape spaces in the path.
+* When making a new volume for a mysql container, where could you look to see where the data path should be located in the container?
+ANSWER: Docker Hub
 
 ```
 docker pull mysql
@@ -73,5 +89,16 @@ docker container exec -it nginx bash
 ```
 docker run -p 80:4000 -v $(pwd):/site bretfisher/jekyll-serve
 ```
+### Database Passwords in Containers :
+```
+For docker run, and the forthcoming Docker Compose sections, you need to either set a password with the environment variable:
 
+POSTGRES_PASSWORD=mypasswd
+
+Or tell it to ignore passwords with the environment variable:
+
+POSTGRES_HOST_AUTH_METHOD=trust
+
+Note this change was in the Docker Hub image, and not a change in postgres itself.
+```
 
