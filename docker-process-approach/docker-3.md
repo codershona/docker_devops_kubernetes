@@ -1,6 +1,11 @@
 # Container Lifetime & Persistent Data: Volumes, Volumes, Volumes
 
 ## Persistent Data: Data Volumes
+
+* Important Resources to learn: ```bit.ly/3hy1YXy``` or, 
+```https://bit.ly/3xE53e8``` or, ```https://bit.ly/3k5u8KW``` or, ```https://dockr.ly/3AQcFw4``` 
+
+
 ```
 docker pull mysql
 
