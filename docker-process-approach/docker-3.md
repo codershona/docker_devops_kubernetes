@@ -128,12 +128,16 @@ docker container logs TAB-COMPLETION
 ```
 
 ## Assignment: Edit Code Running In Containers With Bind Mounts
-* 
 
 ```
 ll
 
-docker run -p 80:4000 -v $(pwd):/site bretfisher/jekyll-serve
+cd bindmount-sample-1
+
+docker run -p 80:4000 -v $(pwd):/site codersh/jekyll-serve
+
+Or,
+docker run -p 8080:4000 -v $(pwd):/site codersh/jekyll-serve
 ```
 ### Database Passwords in Containers :
 ```
