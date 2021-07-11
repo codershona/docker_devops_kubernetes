@@ -91,16 +91,48 @@ docker container rm -f mysql
 cd dockerfile-sample-2
 
 pcat Dockerfile
+Or,
+cat Dockerfile
 
 docker container run -d --name nginx -p 80:80 -v $(pwd):/usr/share/nginx/html nginx
+Or,
+docker container run -d --name nginx -p 8080:80 -v $(pwd):/usr/share/nginx/html nginx
+
+Go to : http://localhost:8080/
 
 docker container run -d --name nginx2 -p 8080:80 nginx
+Or, 
+docker container run -d --name nginx2 -p 8081:80 nginx
 
 docker container exec -it nginx bash
 ```
-
-## Assignment Answers: Edit Code Running In Containers With Bind Mounts
+### Database Upgrades with Named Volumes
+* Database upgrade with container
+* Create a postgres container with named volume psql-data using version 
+* Use Docker Hub to learn VOLUME path and versions needed to run it. 
+* Check logs, stop container.
+* Create a new postgres container with same named volume using 9.6.2
+* Check logs to validate.
 ```
+docker container run -d --name psql -v psql:/var/lib/postgresql/data postgres:9.6.1
+
+docker container logs -f psql
+
+docker container stop TAB-COMPLETION
+
+docker container ps -a
+
+docker volume ls
+
+docker container logs TAB-COMPLETION
+```
+
+## Assignment: Edit Code Running In Containers With Bind Mounts
+* 
+
+```
+ll
+
 docker run -p 80:4000 -v $(pwd):/site bretfisher/jekyll-serve
 ```
 ### Database Passwords in Containers :
