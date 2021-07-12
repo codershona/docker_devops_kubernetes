@@ -66,6 +66,15 @@ With Bind Mounts
 * Database Passwords in Containers
 
 ###  Docker Compose: The Multi-Container Tool
+* Docker Compose and The docker-compose.yml
+File
+* Trying Out Basic Compose Commands
+* Assignment: Build a Compose File For a
+Multi-Container Service
+* Adding Image Building to Compose Files
+* Assignment: Compose For Run-Time Image
+Building and Multi-Container Development
+
 ### Swarm Intro and Creating a 3-Node Swarm Cluster
 ### Swarm Basic Features and How to Use Them In Your Workflow
 ### Swarm App Lifecycle
