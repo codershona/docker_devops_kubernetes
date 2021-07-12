@@ -76,6 +76,13 @@ Multi-Container Service
 Building and Multi-Container Development
 
 ### Swarm Intro and Creating a 3-Node Swarm Cluster
+
+* Swarm Mode: Built-In Orchestration
+* Create Your First Service and Scale It Locally
+*  UI Change For Service Create/Update
+*  Docker Machine Bug With Swarm
+* Creating a 3-Node Swarm Cluster
+
 ### Swarm Basic Features and How to Use Them In Your Workflow
 ### Swarm App Lifecycle
 ### Container Registries: Image Storage and Distribution
