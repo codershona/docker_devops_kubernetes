@@ -78,3 +78,26 @@ docker-compose down
 
 docker-compose up
 ```
+
+* Which is the minimum recommended version for a docker-compose.yml file?
+ANSWER: 2
+* Which of the following does "docker-compose up" automatically create, even if not manually specified in the compose file?
+ANSWER: Network
+* What is the 'build context' in a compose file supposed to do?
+ANSWER: It is meant to specify where the Dockerfile of the image is supported to build from. 
+
+* The "ports:" key in a compose file does the same thing as the EXPOSE stanza in a Dockerfile.
+
+ANSWER: False
+
+* Usernames for a database, when placed in a compose file of a specific service, would best fit placed under which of the following keys?
+
+ANSWER: environment:
+
+* Where does compose derive a DNS name from?
+
+ANSWER: service names
+
+
+
+
