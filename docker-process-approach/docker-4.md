@@ -99,5 +99,13 @@ ANSWER: environment:
 ANSWER: service names
 
 
-
-
+### Learning resources
+* https://yaml.org/start.html
+* https://yaml.org/refcard.html
+* https://docs.docker.com/compose/compose-file/compose-versioning/
+* https://github.com/docker/compose/releases
+* https://github.com/docker/compose/releases
+* https://github.com/BretFisher/ama/issues/8
+* https://docs.docker.com/compose/compose-file/#links
+* https://docs.docker.com/compose/compose-file/
+* https://docs.docker.com/compose/compose-file/#build
