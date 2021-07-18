@@ -69,6 +69,8 @@ docker image inspect drupal
 
 docker-compose up
 
+Check this in browser: http://localhost:8081/core/install.php
+
 https://hub.docker.com
 
 docker-compose down --help
