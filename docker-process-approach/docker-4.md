@@ -28,7 +28,13 @@ https://docs.docker.com
 ```
 pcat docker-compose.yml
 
+Or,
+
+cat docker-compose.yml
+
 docker-compose up
+
+Check in : http://localhost:81/
 
 docker-compose up -d
 
