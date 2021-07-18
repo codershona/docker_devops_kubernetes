@@ -50,6 +50,16 @@ docker-compose down
 ```
 
 ## Assignment Answers: Build a Compose File for a Multi-Container Service
+
+* Build a basic compose file for a Drupal content management system website, docker hub is your friend.
+* Use a drupal image along with the postgres image.
+* Use ports to expose drupal on 8080 so you can see in localhost:8080 
+* Be sure to set postgres password
+* Walk through drupal setup via browser.
+* Tip: Drupal assumes DB is localhost, but its a service name.
+* Extra credit: use voulmes to store Drupal unique data.
+
+
 ```
 docker-compose.yml
 
