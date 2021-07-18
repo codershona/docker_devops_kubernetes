@@ -15,6 +15,16 @@ https://docs.docker.com
 ```
 
 ## Trying Out Basic Compose Commands
+* CLI tools comes with Docker for linux but seperate to download linux.
+* Not a production-grade tool but ideal for local development and test.
+* <b>Two common commands are: </b>
+     * docker-compose up : to setup volumes/networks and start all containers.
+     * docker-compose down : to stop all containers and remove cont/vol/net.
+* If all your projects had a Dockerfile and docker-compose.yml file then new devloper onboarding would be: 
+  * git clone github.com/some/software
+  * docker-compose up
+
+
 ```
 pcat docker-compose.yml
 
