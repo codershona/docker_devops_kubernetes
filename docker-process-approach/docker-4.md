@@ -1,5 +1,12 @@
 # Making It Easier with Docker Compose: The Multi-Container Tool
 
+* Why : Configure relationships between containers &
+Save our docker container to run the settings in easy to read file & create one liner developer environment startups. 
+* Comprised of 2 seperated but related things.
+* YAML formatted file that describes our solutions for: 
+Containers, Networks and Volumes.
+* A CLI tool docker-compose used for local dev/test automation with those YAML files.
+
 ## Docker Compose and The Docker-compose.yml File
 ```
 docker-compose.yml
