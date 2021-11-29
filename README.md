@@ -165,6 +165,16 @@ Building and Multi-Container Development
 
 * <b>Namespace</b>: It can filtered groups of objects in cluster with Secrets, ConfigMag and many more. 
 
+#### Kubectl run, create, and apply:
+
+* It is evolving and it has CLI.
+* There is also YAML pro and cons.
+* We can use to Run and Create the CLI.
+* We can get 3 ways to create pods from the KubeCTL CLI
+  1. kubectl run :  We can change to be only for Pod Creation on 1.18.
+  2. kubectl create : We can create some resources via YAML or CLI files.
+  3. kubectl apply : We can create anything via YAML
+
 
 ### Exposing Kubernetes Ports
 ### Kubernetes Management Techniques
