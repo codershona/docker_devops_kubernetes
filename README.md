@@ -143,6 +143,29 @@ Building and Multi-Container Development
 * Control Plane has a set of containers that manage the clusters. This includes API server, Scheduler, Controller Manager and more.
 * It also sometimes known as master.
 
+#### Installation of Kubernetes Locally:
+
+* It is a series of containers, CLI and configuration.
+* There are many ways to install, but we can focus on any easy Installation.
+* Docker Desktop needs to be enable in the settings.
+* It needs to setup everythings inside the Docker to make exisiting on Linux VM.
+* Docker has a ToolBox on Windows which is called MiniKube.
+* It uses VirtualBox to make Linux VMs.
+* We can also use our own Linux Host or VM called MicroK8s.
+* We can also install right on the OS.
+* Install Tips for minikube and MicroK8s
+
+####  Kubernetes Container Abstractions:
+
+* <b>POD</b>: One or more Containers running together on one Node of basic unit of deployment and the containers are always in Pods.
+
+* <b>Controller</b>: For creating and updating pods and other objects and there were many types of controllers like, deployment, ReplicaSet, CronJob, Job, StatefulSet and DaemonSet. 
+
+* <b>Service</b>: Its service Networks EndPoints to connect to a Pod.
+
+* <b>Namespace</b>: It can filtered groups of objects in cluster with Secrets, ConfigMag and many more. 
+
+
 ### Exposing Kubernetes Ports
 ### Kubernetes Management Techniques
 ### Moving to Declarative Kubernetes YAML
