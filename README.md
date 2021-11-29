@@ -88,7 +88,51 @@ Building and Multi-Container Development
 ### Container Registries: Image Storage and Distribution
 ### Docker in Production
 ### What and Why of Kubernetes
+
+* Kubernetes = popular with Orchestration.
+* Container Orchestration = Make many server acts like one
+* Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
+* Runs on the top docker as a set of APIs in Containers.
+* Many clouds for it for you.
+* Many "vendors" make a distribution of it.
+* It provides API/CLI to manage containers across servers.
+
+#### Reasons uses of Kubernetes
+
+* By reviewing swarm mode: built-in orchestration.
+* Orchestration: Next logical steps in journey tofaster DevOps.
+* We need to understand the reason orchestration is required.
+* Not every solution needs orchestration.
+* Servers + Change Rate = Advantages of Orchestration.
+* Next make a decision to choose orchestration.
+* While Kubernetes make decision to use which distribution for example, cloud or self management like Docker Enterprise, OpenShift, Rancher, Canonical and VMWare PKS) and we do not usually need the pure upstream.
+
+#### Kubernetes or Swarm:
+
+* These two both are containers orchestrators.
+* Both had solid platform with vendors backing.
+* Swarm is easir to deploy and manage.
+* Kubernetes have many features and moe flexibility.
+
+#### Benefits of Docker Swarm:
+
+* It comes with Docker woth single vendor platform.
+* It has easier to troubleshoot.
+* It has secure defult.
+* It has easier orchestrators to deploy and manage yourself.
+* It can runs anywhere in docker like, local or cloud or datacenter as well as ARM or windows or 32-bit.
+
+##### Benefits of Kubernetes:
+
+* The cloud would deploy and manage Kubernetes for you.
+* The infrastructure vendors are making their own distribution.
+* It has widest adoption and community.
+* It is flexible to cover widest sets of use cases.
+* It has first vendor support. 
+* It has CTO/CIO Checkbox.
+
 ### Kubernetes Install And Your First Pods
+
 ### Exposing Kubernetes Ports
 ### Kubernetes Management Techniques
 ### Moving to Declarative Kubernetes YAML
