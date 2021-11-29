@@ -133,6 +133,16 @@ Building and Multi-Container Development
 
 ### Kubernetes Install And Your First Pods
 
+* Check out Kubernetes or k8's Components.
+* The whole orchestration system is Kubernetes.
+* k8 or kube for short.
+* KubeCTL: CLI to configure Kubernetes and manage the apps.
+* We can also say this cube controls.
+* Node.js is basically usd for Single Server in Kubernetes Cluster.
+* Kublet means Kubernetes basically runs agent on nodes.
+* Control Plane has a set of containers that manage the clusters. This includes API server, Scheduler, Controller Manager and more.
+* It also sometimes known as master.
+
 ### Exposing Kubernetes Ports
 ### Kubernetes Management Techniques
 ### Moving to Declarative Kubernetes YAML
